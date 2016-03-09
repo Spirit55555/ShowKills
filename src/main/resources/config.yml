@@ -1,0 +1,4 @@
+objective: "Kills"
+messages:
+  own: "&cYour kills:&f %d"
+  other: "&c%s's kills:&f %d"

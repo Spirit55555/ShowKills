@@ -1,0 +1,25 @@
+main: dk.spirit55555.showkills.ShowKills
+name: ${project.name}
+version: ${project.version}
+description: ${project.description}
+author: Anders G. Jørgensen
+website: http://spirit55555.dk
+permissions:
+  showkills.*:
+    description: Gives access to all ShowKills permissions.
+    children:
+      showkills.own: true
+      showkills.other: true
+  showkills.own:
+    description: Allows you to see your own kills.
+    default: true
+  showkills.other:
+    description: Allows you to see other players kills.
+    default: true
+commands:
+   showkills:
+      description: Show your own or another players kills
+      usage: |
+        /<command> - Show your own kills
+        /<command> <player> - Show another players kills
+      aliases: [sk, kills]
